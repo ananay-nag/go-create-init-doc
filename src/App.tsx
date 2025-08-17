@@ -477,7 +477,12 @@ const Footer = () => (
       >
         GitHub Repository
       </a>{" "}
-      | Version 1.0.0 | Made by ananay-nag
+      | Version 1.0.1 | Made with ❤️ by <a
+        href="https://github.com/ananay-nag"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-black hover:underline"
+      > ananay-nag </a>
     </p>
   </footer>
 );
