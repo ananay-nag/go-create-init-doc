@@ -1,0 +1,86 @@
+@import "tailwindcss";
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f3f4f6;
+  color: #2c3e50;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #805ad5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  background: #f9f9f9;
+  padding: 0.15em 0.3em;
+  border-radius: 3px;
+  font-family: 'Fira Mono', monospace;
+  font-size: 0.9em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  border: 1px solid #e2e8f0;
+  padding: 0.6rem 1rem;
+}
+
+th {
+  background: #ede9fe;
+  color: #5a3e98;
+  font-weight: 600;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+
+
+:root {
+  --purple: #805ad5;
+  --purple-light: #d6bcfa;
+  --purple-dark: #553c9a;
+}
+
+body {
+  background: linear-gradient(135deg, #ede9fe 0%, #c4b5fd 100%);
+}
+
+/* Scrollbar for sidebar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--purple-dark);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
