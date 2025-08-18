@@ -365,6 +365,17 @@ const Features = () => (
               created.
             </td>
           </tr>
+          <tr className="bg-purple-50 hover:bg-purple-100">
+            <td className="px-6 py-4">
+              Initialize a new module with all auto config (mod-name.yaml, go-mod):
+            </td>
+            <td className="px-6 py-4 font-mono text-purple-700">
+              go-set-mod -i module-name
+            </td>
+            <td className="px-6 py-4">
+              Make Dir <code>mkdir module-name</code> in current directory, Init all like <code>go-set-mod -c</code>
+            </td>
+          </tr>
           <tr className="bg-white hover:bg-purple-50">
             <td className="px-6 py-4">Customizable module path prefix</td>
             <td className="px-6 py-4 font-mono text-purple-700">
@@ -425,7 +436,7 @@ const Examples = () => (
           Create a new module in a subdirectory:
         </span>
       </p>
-      <CodeBlock language="bash">{`system@root$:  go-set-mod my-module`}</CodeBlock>
+      <CodeBlock language="bash">{`go-set-mod my-module`}</CodeBlock>
     </motion.div>
 
     <motion.div
@@ -439,7 +450,20 @@ const Examples = () => (
           Initialize the current directory as a module:
         </span>
       </p>
-      <CodeBlock language="bash">{`system@root$:  go-set-mod -c`}</CodeBlock>
+      <CodeBlock language="bash">{`go-set-mod -c`}</CodeBlock>
+    </motion.div>
+    <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.4 }}
+    >
+      <p>
+        <span className="font-semibold">
+          Initialize a new module with all auto config (mod-name.yaml, go-mod):
+        </span>
+      </p>
+      <CodeBlock language="bash">{`go-set-mod -i <module-name>`}</CodeBlock>
     </motion.div>
 
     <motion.div
@@ -477,7 +501,7 @@ const Footer = () => (
       >
         GitHub Repository
       </a>{" "}
-      | Version 1.0.1 | Made with ❤️ by <a
+      | Version 1.0.3 | Made with ❤️ by <a
         href="https://github.com/ananay-nag"
         target="_blank"
         rel="noopener noreferrer"
